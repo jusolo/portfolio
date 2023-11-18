@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="projects">
+  <section
+    class="w-full h-auto flex flex-col gap-10 text-center my-20 lg:mt-30"
+  >
+    <h2 class="text-6xl lg:text-4xl">
+      My <span class="text-blue-800 font-bold">Projects</span>
+    </h2>
+    <div class="grid grid-cols-1 gap-5 place-items-center p-10 lg:grid-cols-3">
+      <Card
+        title="Ecommerce"
+        body="Developed an MERN stack e-commerce platform for seamless shopping experiences. Integrating MongoDB, Express, React, and Node.js, the project emphasizes a secure and modern design. Committed to delivering an efficient and visually appealing platform, prioritizing user-friendly product discovery and purchase processes"
+        path="/images/projects/ecommerce.png"
+        tags={["MongoDB", "Express", "React", "NodeJS"]}
+        link="https://lighthearted-stardust-39f6ad.netlify.app/"
+      />
+      <!-- <Card
+        title="Movies"
+        body="Crafted a movie streaming page with React, FastAPI, and MongoDB, offering a unique cinematic experience. The platform enables users to explore and enjoy a diverse film selection through an intuitive interface. Focused on delivering an immersive digital space, the project caters to movie enthusiasts, ensuring easy and thrilling film discovery."
+        path="/images/projects/movie.png"
+        tags={["React", "FastApi", "MongoDB"]}
+        link="https://lighthearted-stardust-39f6ad.netlify.app/"
+      /> -->
+    </div>
+  </section>
+</Layout>
+
+<style></style>

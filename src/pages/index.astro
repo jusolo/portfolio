@@ -1,0 +1,58 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="home">
+  <section class="h-auto dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-left lg:py-16">
+      <img
+        class="w-36 h-36 m-auto my-3 p-1 rounded-full ring-2 ring-blue-300 dark:ring-gray-500"
+        src="/profile.jpg"
+        alt="Extra large avatar"
+      />
+      <h1
+        class="my-8 px-16 text-3xl font-extrabold tracking-tight leading-none text-gray-900 lg:text-2xl lg:text-center dark:text-white"
+      >
+        Hi, My name is <span class="text-blue-800">Sebastian</span>
+      </h1>
+      <p
+        class="mb-8 px-16 text-lg font-normal text-gray-500 lg:text-sm lg:px-48 dark:text-gray-400"
+      >
+        Passionate software developer with a creative and analytical approach.
+        My journey in the world of development is characterized by a commitment
+        to innovative and efficient solutions. I combine technical skills in
+        various languages and frameworks with a constant desire to learn and
+        improve. My passion for software creation translates into a user-centric
+        approach, where quality and efficiency are priorities. I value teamwork,
+        problem-solving, and adaptability in dynamic environments. Always
+        seeking new challenges to continue evolving in the fascinating realm of
+        software development.
+      </p>
+      <div
+        class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
+      >
+        <a
+          href="/documents/CV.pdf"
+          class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+          download="cv.pdf"
+          ><svg
+            class="w-3.5 h-3.5 me-2.5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"
+            ></path>
+            <path
+              d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
+            ></path>
+          </svg> Download CV</a
+        >
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style></style>

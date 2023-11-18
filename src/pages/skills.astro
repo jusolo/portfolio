@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="skills">
+  <section
+    class="w-full h-auto flex flex-col gap-10 text-center my-20 lg:mt-30"
+  >
+    <h2 class="text-6xl lg:text-4xl">
+      My <span class="text-blue-800 font-bold">Skills</span>
+    </h2>
+    <div class="grid grid-cols-1 gap-5 place-items-center p-10 lg:grid-cols-3">
+      <Card
+        title="Programming Languages"
+        body="Proficient in PHP, Python, and JavaScript, I seamlessly blend back-end versatility with front-end interactivity. Crafting dynamic and efficient solutions, I specialize in creating smooth web experiences with a user-centric approach."
+        tags={["PHP", "Python", "JavaScript"]}
+        path="/images/skills/programing.png"
+      />
+      <Card
+        title="Frameworks"
+        body="Expertise in Angular, React, Node.js, and Django frameworks empowers me to build robust, scalable applications. From dynamic front-end interfaces to efficient back-end solutions, I leverage these frameworks to create seamless, user-focused experiences."
+        tags={["Angular", "React", "NodeJS", "Django"]}
+        path="/images/skills/framework.png"
+      />
+      <Card
+        title="Databases"
+        body="Proficient in MySQL, MongoDB, SQL Server, and PostgreSQL databases, I navigate diverse data structures with precision. From relational to NoSQL environments, I optimize database functionality to ensure efficient and secure data management for seamless application performance."
+        tags={["MySQL", "MongoDB", "SQLServer", "PostgreSQL"]}
+        path="/images/skills/database.png"
+      />
+      <Card
+        title="Development Methodologies"
+        body="Experienced in Scrum and Agile methodologies, I excel in collaborative, iterative project management. By fostering communication and adaptability, I ensure efficient development cycles, delivering high-quality results in dynamic and rapidly evolving environments."
+        tags={["Scrum", "Agile"]}
+        path="/images/skills/agil.png"
+      />
+      <Card
+        title="Other Skills"
+        body="Proficient in Git for version control and testing methodologies, I ensure code integrity and project stability. With a meticulous approach to testing, I guarantee robust, error-free solutions and effective collaboration within the development workflow."
+        tags={["testing", "Git"]}
+        path="/images/skills/plus.png"
+      />
+    </div>
+  </section>
+</Layout>
+
+<style></style>
